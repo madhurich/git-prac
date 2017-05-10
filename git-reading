@@ -1,0 +1,24 @@
+http://stackoverflow.com/questions/13239368/git-how-to-close-commit-editor
+
+to revert a commit,
+git revert <commit_number>
+
+you csn get the commit number by
+git log
+
+then identify which commit you want to revert.
+then you will get commit window
+press 'i' to write any message about your reverting commit
+then press 'esc' to escape from insert mode, then to SAVE and EXIT
+press ':x!' and hit 'enter' (:x! will take the cursor to the bottom, and hitting enter exits the commit window).
+
+now after all these, the old file can be seen in your local machine repository
+not in the remote repository, since you dint commit the reverted or old file after reverting the commit.
+
+So to see those changes in remote repository, 
+		> stage the file (git add .)
+		> commit the file (git commit -m "message")
+		> push the old file to see the reflected changes in remote repo (git push)
+		> now you cna see the changes in remote repo
+
+	
