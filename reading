@@ -25,3 +25,7 @@ router object.
 to do imperative routing, from which component you want to redirect, in that component you need to do
 import {Router} from 'angular2/router';             
 
+---------------------
+Here I am adding a line in the new branch 'copy-git-repo'
+
+Brnaching here
